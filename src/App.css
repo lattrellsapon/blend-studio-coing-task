@@ -1,32 +1,11 @@
-.weather-heading,
-.weather-location,
-.weather-forecast,
-.weather-descriptin {
-  margin: 10px auto;
-}
-
-.weather-heading {
-  font-size: 1.17em;
-  font-weight: bold;
-}
-
-.weather-location {
-  font-size: 22px;
-  font-weight: bold;
-}
-.weather-widget {
-  background: none;
-  width: 75%;
-  padding: 8px;
-  border-radius: 4px;
-  margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @media only screen and (min-width: 600px) {
   /* For tablets: */
   .weather-widget {
     width: 50%;
+  }
+  .five-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -35,5 +14,10 @@
   .weather-widget {
     width: 40%;
     opacity: 0.8;
+  }
+  .five-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
   }
 }
