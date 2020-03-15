@@ -12,7 +12,7 @@ export class Weather extends Component {
 
   componentDidMount() {
     fetch(
-      `http://api.openweathermap.org/data/2.5/forecast?q=Auckland&appid=${API_KEY}`
+      `https://api.openweathermap.org/data/2.5/forecast?q=Auckland&appid=${API_KEY}`
     )
       .then(res => res.json())
       .then(data => {
